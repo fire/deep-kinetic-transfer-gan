@@ -36,17 +36,13 @@ python3 test
 
 #### Dataset
 
-* `scoop install miniconda3` Install miniconda.
+* `scoop install micromamba` Install miniconda.
 
-* Create conda `conda create --name kinetic` environment.
-
-* Activate conda `conda init powershell` at the base directory.
-
-* Activate conda `conda activate kinetic` at the base directory.
+* Create micromamba `micromamba shell` environment.
 
 * Restart powershell
 
-* Install cuda. `conda install -y tqdm scipy tensorboard pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c=conda-forge`
+* Install cuda. `micromamba install -y tqdm scipy tensorboard pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge`
 
 * Run `blender -b -P fbx2bvh.py` or `blender -b -P gltf2bvh.py` to convert animation files to bvh files. If you already have bvh file as dataset, please skip this step.
 
